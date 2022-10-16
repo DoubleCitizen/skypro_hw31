@@ -18,9 +18,9 @@ class UserRoles:
     USER = 'member'
     ADMIN = 'admin'
     MODERATOR = 'moderator'
-    choices = (("Пользователь", USER),
-               ("Админ", ADMIN),
-               ("Модератор", MODERATOR))
+    choices = ((USER, "Пользователь"),
+               (ADMIN, "Админ"),
+               (MODERATOR, "Модератор"))
 
 
 class User(models.Model):
