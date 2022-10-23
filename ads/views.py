@@ -1,6 +1,5 @@
 import json
 
-from django.core.paginator import Paginator
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.utils.decorators import method_decorator
@@ -15,7 +14,6 @@ from ads.models import Category, Ad, Selection
 from ads.permissions import IsOwnerSelection, IsOwnerAdOrStaff
 from ads.serializers import AdListSerializer, AdDetailSerializer, SelectionCreateSerializer, SelectionListSerializer, \
     SelectionDetailSerializer, AdUpdateSerializer
-from avito import settings
 from users.models import User
 
 
