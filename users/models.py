@@ -5,7 +5,7 @@ from django.db import models
 from dateutil.relativedelta import relativedelta
 from datetime import date
 
-USER_MIN_AGE = 9
+from avito.settings import USER_MIN_AGE
 
 
 def birth_date_validator(value):
